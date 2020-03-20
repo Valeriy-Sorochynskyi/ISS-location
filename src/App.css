@@ -1,103 +1,78 @@
-body {
-  padding-top: 20px;
-  background-color: lightgoldenrodyellow;
-}
-
-.phone-images {
-  background-color: white;
-  width: 450px;
-  height: 450px;
-  overflow: hidden;
-  position: relative;
-  float: left;
-}
-
-.phones {
-  list-style: none;
-}
-
-.thumb {
-  float: left;
-  margin: -0.5em 1em 1.5em 0;
-  padding-bottom: 1em;
-  height: 100px;
-  width: 100px;
-}
-
-.phones__btn-buy-wrapper {
-  align-items: center;
-  float: right;
-  height: 100%;
-  display: flex;
-  margin: 0 1em;
-}
-
-.phones li {
-  clear: both;
-  height: 115px;
-  padding-top: 15px;
-}
-
-/** Detail View **/
-img.phone {
-  float: left;
-  margin-right: 3em;
-  margin-bottom: 2em;
-  background-color: white;
-  padding: 2em;
-  height: 400px;
-  width: 400px;
-  display: none;
-}
-
-img.phone:first-child {
-  display: block;
-}
-
-ul.phone-thumbs {
-  margin: 0;
-  list-style: none;
-}
-
-ul.phone-thumbs li {
-  border: 1px solid black;
-  display: inline-block;
-  margin: 1em;
-  background-color: white;
-}
-
-ul.phone-thumbs img {
-  height: 100px;
-  width: 100px;
-  padding: 1em;
-}
-
-ul.phone-thumbs img:hover {
-  cursor: pointer;
-}
-
-ul.specs {
-  clear: both;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-ul.specs > li {
-  display: inline-block;
-  width: 200px;
-  vertical-align: top;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-ul.specs > li > span {
-  font-weight: bold;
-  font-size: 1.2em;
+.app {
+  margin: 20px auto;
+  width: 80%;
 }
 
-ul.specs dt {
-  font-weight: bold;
+.app-heading {
+  text-align: center;
 }
 
-h1 {
-  border-bottom: 1px solid gray;
+.container {
+  width: 100%;
+  height: 65vh;
+}
+
+.heading,
+.container {
+  display: flex;
+
+}
+
+.map-wrapper {
+  position: relative;
+
+}
+
+.map-heading,
+.map-wrapper {
+  flex-basis: 65%;
+}
+
+.people,
+.date-heading {
+  flex-basis: 35%;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map-wrapper,
+.people,
+.date-heading,
+.map-heading {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.people,
+.date-heading,
+.map-heading {
+  padding: 5px;
+}
+
+.location-info {
+  max-width: 160px;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
