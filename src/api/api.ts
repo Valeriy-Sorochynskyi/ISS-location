@@ -1,5 +1,6 @@
-const CURRENT_LOCATION_URL = 'https://api.open-notify.org/iss-now.json';
-const PEOPLE_IN_SPACE_URL = 'https://api.open-notify.org/astros.json';
+/* eslint-disable max-len */
+const CURRENT_LOCATION_URL = 'https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json';
+const PEOPLE_IN_SPACE_URL = 'https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json';
 
 const getData = <T>(url: string): Promise<T> => {
   return fetch(url)
